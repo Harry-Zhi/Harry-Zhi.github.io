@@ -103,7 +103,7 @@
               </p>
             </td>
             <td width="33%">
-              <img src="images/Shuaifeng.jpg">
+              <img src="images/Shuaifeng_circle.png">
             </td>
           </tr>
         </table>
@@ -142,22 +142,24 @@
 
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr onmouseout="flyspin_stop()" onmouseover="flyspin_start()">
+          <tr onmouseout="scenecode_stop()" onmouseover="scenecode_start()">
               <td width="25%">
-                <div id='flyspin' class='hidden'><img src="images/SceneCode_small_size.gif"></div>
-                <div id='flystill'>
-                  <a href="images/SceneCode_small_size.gif"></a><img src="images/SceneCode_still.png"></a>
+                <div id='scenecode_opt' class='hidden'><img src="images/SceneCode_small_size.gif"></div>
+                <div id='scenecode_still'>
+                    <!-- <a href="images/SceneCode_small_size.gif"></a><img src="images/SceneCode_still.png"></a> -->
+                    <img src="images/SceneCode_still.png">
+
                 </div>
                 <script type="text/javascript">
-                  function flyspin_start() {
-                    document.getElementById('flyspin').style.display = 'inline';
-                    document.getElementById('flystill').style.display = 'none';
+                  function scenecode_start() {
+                    document.getElementById('scenecode_opt').style.display = 'inline';
+                    document.getElementById('scenecode_still').style.display = 'none';
                   }
-                  function flyspin_stop() {
-                    document.getElementById('flyspin').style.display = 'none';
-                    document.getElementById('flystill').style.display = 'inline';
+                  function scenecode_stop() {
+                    document.getElementById('scenecode_opt').style.display = 'none';
+                    document.getElementById('scenecode_still').style.display = 'inline';
                   }
-                  flyspin_stop()
+                  scenecode_stop()
                 </script>
               </td>
               <td width="75%" valign="middle">
