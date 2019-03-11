@@ -1,0 +1,4 @@
+Shuaifeng ZHi is a PhD student in The Dyson Robotics Lab at Imperial College, 
+supervised by Prof. Andrew Davison and Dr. Stefan Leutenegger. 
+
+My research concerns the semantic SLAM......
