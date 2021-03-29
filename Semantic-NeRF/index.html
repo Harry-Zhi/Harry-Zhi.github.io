@@ -108,7 +108,7 @@
         <h2>Semantic Label Denoising</h2>
         <hr>
         <p>
-            Semantic-NeRF, trained only with severly corrupted labels, is able to learn a smooth representation and render denoised input labels.
+            Semantic-NeRF, trained only with severely corrupted labels, is able to learn a smooth representation and render denoised input labels.
 
             While pixel-wise denoising at this level is not a realistic application, however, it is a very challenging task and highlights our key observation
             that training Semantic-NeRF itself is a fusion process which enables smooth renderings benefiting from the internal consistency and coherence of implicit joint representation.
@@ -165,11 +165,11 @@
         <hr>
         <p>
             Low-resolution labelling from light-weight CNNs or manual annotations are less costly to acqurire than high-resolution ones. 
-            By supervising Semantic-NeRF with only low-res labels, we can accurately super-resolve input labels.
+            By supervising Semantic-NeRF with only low-resolution labels, we can accurately super-resolve input labels.
 
             <br>
             Note that either coarse or sparse training labels use the same amount of information from low-resolution label maps.
-            (<i>Spare labels have been zoomed-in <b>4</b> times for the ease of visualisation.</i>)
+            (<i>Sparse labels have been zoomed-in <b>4</b> times for the ease of visualisation.</i>)
         </p>
 
 
@@ -234,7 +234,7 @@
         <h2>Label Propagation (Interactive Segmentation)</h2>
         <hr>
         <p>
-            Inspired by the success of label super-resolution, practical interactive annotation from users in form of clicks, strokes or stratches are desirable.
+            Inspired by the success of label super-resolution, practical interactive annotation from users in form of clicks, strokes or scratches are desirable.
             We show that these partial labels can also be propagated to dense scene labelling by Semantic-NeRF.
 
             <br>
@@ -287,7 +287,7 @@
             and then applying marching cubes.
             Attached semantic texture is rendered by treating the <b>negative normal direction</b> of mesh vertices as the ray marching direction during volume rendering.
             
-            Note that Semantic-NeRF is able to predict descent geometry and semantics even in occluded regions (e.g., areas begind the sofa) and  
+            Note that Semantic-NeRF is able to predict decent geometry and semantics even in occluded regions (e.g., areas begind the sofa) and  
             fill the holes to some extent in unobserved regions.
         </p>
                 
@@ -371,6 +371,10 @@
 
     <footer>
         <p>Feel free to send any feedback and questions to <a href="http://shuaifengzhi.com">Shuaifeng Zhi</a></p>
+    </footer>
+    <footer>
+        <!-- <h6>Acknowledgement</h6> -->
+        <p><small>The website template was borrowed from <a href="https://vsitzmann.github.io/siren/">SIREN</a></small></p>
     </footer>
 </div>
 
