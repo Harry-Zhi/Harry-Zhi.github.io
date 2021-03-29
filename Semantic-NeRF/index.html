@@ -75,7 +75,7 @@
             So that it is possible to train Semantic-NeRF efficiently to accurately render the full scene with various types of sparse or imperfect labels.
             </br>
             </br>
-            We aim to demonstraisite the benefits and promising applications of efficiently learning such a joint 3D representation for semantic labelling and understanding. 
+            We aim to demonstrate the benefits and promising applications of efficiently learning such a joint 3D representation for semantic labelling and understanding. 
     </div>
 
 
@@ -84,12 +84,12 @@
         <hr>
         <p>
             Our proposed semantic representation can be trained with labels from only few key-frames. 
-            Entropy matches well to object boundaries and uncertain/unknown regions.
+            Pixels with high entropy matches well to object boundaries and uncertain/unknown regions.
         </p>
         <!-- <div class="row align-items-center"> -->
         <div class="row justify-content-left">
             <div class="col-sm-12">
-                <h5>Replica Room_2 (20% Label of Full Sequence)</h5>
+                <h5>Replica Room_2 (Using 20% Label of Full Sequence)</h5>
                 <div class="col justify-content-center text-center">
                     <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
                         <!-- <source src="https://www.dropbox.com/s/78h8sunsq6zrvg0/VS_room2.mp4?dl=1" type="video/mp4"> -->
@@ -111,7 +111,7 @@
             Semantic-NeRF, trained only with severly corrupted labels, is able to learn a smooth representation and render denoised input labels.
 
             While pixel-wise denoising at this level is not a realistic application, however, it is a very challenging task and highlights our key observation
-            that training Semantic-NeRF itself is a fusion process which enables coherent renderings benefiting from the internal consistency of implicit joint representation.
+            that training Semantic-NeRF itself is a fusion process which enables smooth renderings benefiting from the internal consistency and coherence of implicit joint representation.
         </p>
         <!-- <div class="row align-items-center"> -->
         <div class="row justify-content-left">
@@ -164,9 +164,12 @@
         <h2>Semantic Label Super-Resolution</h2>
         <hr>
         <p>
-            Low-resolution labelling from CNNs or manual annotations are less costly to acqurire than high-resolution ones. 
-            By supervising Semantic-NeRF with only low-res labels, we show super-resolve input labels from either a "dense" way or "sparse" way.
-            (<i>Single click labels have been zoomed-in <b>4</b> times for the ease of visualisation.</i>)
+            Low-resolution labelling from light-weight CNNs or manual annotations are less costly to acqurire than high-resolution ones. 
+            By supervising Semantic-NeRF with only low-res labels, we can accurately super-resolve input labels.
+
+            <br>
+            Note that either coarse or sparse training labels use the same amount of information from low-resolution label maps.
+            (<i>Spare labels have been zoomed-in <b>4</b> times for the ease of visualisation.</i>)
         </p>
 
 
@@ -231,12 +234,12 @@
         <h2>Label Propagation (Interactive Segmentation)</h2>
         <hr>
         <p>
-            Inspired by the success of label super-resolution, interactive annotation from users in form of clicks, strokes or stratches are desirable.
+            Inspired by the success of label super-resolution, practical interactive annotation from users in form of clicks, strokes or stratches are desirable.
             We show that these partial labels can also be propagated to dense scene labelling by Semantic-NeRF.
 
             <br>
             Even single click per class/frame leads to very competitive semantic rendering of the whole scene.
-            (<i>Spare labels below have been zoomed-in <b>9</b> times for the ease of visualisation.</i>)
+            (<i>Single click labels below have been zoomed-in <b>9</b> times for the ease of visualisation.</i>)
         </p>
 
 
@@ -280,11 +283,11 @@
         <h2>Semantic 3D Reconstruction from Posed Images</h2>
         <hr>
         <p>
-            Explicit 3D meshes can be extracted from Semantic-NeRF by querying the MLPs on dense grids within the scene, 
+            Explicit 3D meshes can be extracted from Semantic-NeRF by querying the MLP on dense grids within the scene, 
             and then applying marching cubes.
-            Attached semantic texture are rendered by treating the <b>negative normal direction</b> as the ray marching direction during volume rendering.
+            Attached semantic texture is rendered by treating the <b>negative normal direction</b> of mesh vertices as the ray marching direction during volume rendering.
             
-            Note that Semantic-NeRF is able to predict descent geometry and semantics even in occluded regions (the areas begind the sofa) and  
+            Note that Semantic-NeRF is able to predict descent geometry and semantics even in occluded regions (e.g., areas begind the sofa) and  
             fill the holes to some extent in unobserved regions.
         </p>
                 
@@ -325,19 +328,14 @@
         <hr>
         <p>
             We have shown that adding a semantic output to a scene-specific implicit MLP model of geometry and appearance
-            means that complete and high resolution semantic labels
-            can be generated for a scene when only partial, noisy or low-
-            resolution semantic supervision is available. This method
-            has practical uses in robotics or other applications where
-            scene understanding is required in new scenes where only
-            limited labelling is possible.
+            means that complete and high resolution semantic labels can be generated for a scene when only partial, noisy or 
+            low-resolution semantic supervision is available. This method has practical uses in robotics or other applications 
+            where scene understanding is required in new scenes where only limited labelling is possible.
             
             <br>
 
-            An interesting direction for future research is interactive
-            labelling, where the continually training network asks for
-            the new labels which will most resolve semantic ambiguity
-            for the whole scene.
+            An interesting direction for future research is interactive labelling, where the continually 
+            training network asks for the new labels which will most resolve semantic ambiguity for the whole scene.
         </p>
 
     </div>
