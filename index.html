@@ -149,6 +149,51 @@
 
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+
+          <tr onmouseout="iLabel_still()" onmouseover="iLabel_still_mouse_on()">
+            <td width="25%">
+              <div id='iLabel_on' class='hidden'><img src="images/iLabel_still_mouse_on.png"  alt="PontTuset" width="188" style="border-style: none"></div>
+              <div id='iLabel_off'>
+                  <img src="images/iLabel_still.png"  alt="PontTuset" width="160" style="border-style: none">
+
+              </div>
+              <script type="text/javascript">
+                function iLabel_still_mouse_on() {
+                  document.getElementById('iLabel_on').style.display = 'inline';
+                  document.getElementById('iLabel_off').style.display = 'none';
+                }
+                function iLabel_still() {
+                  document.getElementById('iLabel_on').style.display = 'none';
+                  document.getElementById('iLabel_off').style.display = 'inline';
+                }
+                iLabel_still()
+              </script>
+            </td>
+            <td width="75%" valign="middle">
+              <p>
+                <!-- <a href="https://drive.google.com/file/d/1shvItvx_8Sb8QNXhrOXkuRmx2618iwNJ/view?usp=sharing"> -->
+                  <papertitle>iLabel: Interactive Neural Scene Labelling</papertitle>
+                </a>
+                <br>
+                <strong>Shuaifeng Zhi<sup>*</sup></strong>, <a href="https://edgarsucar.github.io/" target="_blank">Edgar Sucar<sup>*</sup></a>,  Andre Mouton, Iain Haughton, 
+                <a href="https://wp.doc.ic.ac.uk/twl15/" target="_blank">Tristan Laidlow</a>, <a href="https://www.doc.ic.ac.uk/~ajd/" target="_blank">Andrew J. Davison</a> 
+                <br>
+                <em>arxiv pre-print</em>
+                <br>
+                <a href="https://arxiv.org/abs/2111.14637" target="_blank">arxiv</a> /
+                <a href="https://youtu.be/bL7RZaMhRbk" target="_blank">video</a> /
+                <a href="https://edgarsucar.github.io/ilabel/" target="_blank">project page</a>
+              </p>
+              <p>
+                We build an online interactive 3D scene labelling and understanding system upon 3D neural field representation of geometry, colour and semantics.
+                <br>
+              </p>
+            </td>
+          </tr>
+
+
+
           <tr onmouseout="semantic_nerf_stop()" onmouseover="semantic_nerf_start()">
             <td width="25%">
               <div id='semantic_nerf_opt' class='hidden'><img src="images/Semantic-NeRF_teaser.gif"  alt="PontTuset" width="188" style="border-style: none"></div>
