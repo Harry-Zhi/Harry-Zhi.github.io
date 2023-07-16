@@ -129,6 +129,9 @@
             <td width="100%" valign="middle">
               <heading>Event and News</heading>
               <p>
+                July 2023: Happy to announce that our paper <strong>PlaneRecTR</strong> got accepted to ICCV 2023!
+              </p>
+              <p>
                 June 2023: Happy to announce that our paper <strong>TsCM</strong> got accepted to T-PAMI 2023!
               </p>
               <p>
@@ -182,7 +185,48 @@
 
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          
+        
+
+          <tr onmouseout="PlaneRecTR_still()" onmouseover="PlaneRecTR_still_mouse_on()">
+            <td width="25%">
+              <div id='PlaneRecTR_on' class='hidden'><img src="images/PlaneRecTR_result.png"  alt="PontTuset" width="188" style="border-style: none"></div>
+              <div id='PlaneRecTR_off'>
+                  <img src="images/PlaneRecTR_teaser.png"  alt="PontTuset" width="160" style="border-style: none">
+
+              </div>
+              <script type="text/javascript">
+                function PlaneRecTR_still_mouse_on() {
+                  document.getElementById('PlaneRecTR_on').style.display = 'inline';
+                  document.getElementById('PlaneRecTR_off').style.display = 'none';
+                }
+                function PlaneRecTR_still() {
+                  document.getElementById('PlaneRecTR_on').style.display = 'none';
+                  document.getElementById('PlaneRecTR_off').style.display = 'inline';
+                }
+                PlaneRecTR_still()
+              </script>
+            </td>
+            <td width="75%" valign="middle">
+              <p>
+                  <papertitle>PlaneRecTR: Unified Query learning for 3D Plane Recovery from a Single View</papertitle>
+                </a>
+                <br>
+                Jingjia Shi, <strong>Shuaifeng Zhi</strong>,  <a href="https://kevinkaixu.net/" target="_blank">Kai Xu</a>
+                <br>
+                <em>International Conference on Computer Vision (ICCV)</em>, 2023
+                <br>
+                <!-- <em>Paper and codes comming soon.</em> -->
+              </p>
+              <p>
+                PlaneRecTR is a vision transformer architecture with query-based learning, and for the first time unifies all subtasks of single-view plane recovery with a single compact model. 
+                Mutual benefits between planar geometry and segmentation can be obtained by PlaneRecTR, achieving SOTA performance on ScanNet and NYUv2-Plane datasets.
+                <br>
+              </p>
+            </td>
+          </tr>
+
+
+
           <tr>
             <td width="25%"><img src="images/TsCM_SCM.png" alt="PontTuset" width="190" style="border-style: none">
               <td width="75%" valign="top">
@@ -212,7 +256,7 @@
                     <papertitle>S<sup>4</sup>R: Self-Supervised Semantic Scene Reconstruction from RGB-D Scans</papertitle>
                   </a>
                   <br>
-                  Junwen Huang, Alexey Artemov, Yujin Chen, <strong>Shuaifeng Zhi<sup>*</sup></strong>, Kai Xu, Matthias Nie&szligner
+                  Junwen Huang, Alexey Artemov, Yujin Chen, <strong>Shuaifeng Zhi</strong>, Kai Xu, Matthias Nie&szligner
                   <!-- &szlig for ß -->
                   <br>
                   <em>arxiv pre-print</em>, 2023
