@@ -129,7 +129,7 @@
             <td width="100%" valign="middle">
               <heading>Event and News</heading>
               <p>
-                July 2023: Happy to announce that our paper <strong>PlaneRecTR</strong> got accepted to ICCV 2023!
+                July 2023: Happy to announce that our paper <strong>PlaneRecTR</strong> got accepted to ICCV 2023, <strong>RaNeRF</strong> got accepted to T-GRS 2023!
               </p>
               <p>
                 June 2023: Happy to announce that our paper <strong>TsCM</strong> got accepted to T-PAMI 2023!
@@ -227,6 +227,45 @@
 
 
 
+          <tr onmouseout="RaNeRF_still()" onmouseover="RaNeRF_still_mouse_on()">
+            <td width="25%">
+              <div id='RaNeRF_on' class='hidden'><img src="images/RaNeRF_result.png"  alt="PontTuset" width="188" style="border-style: none"></div>
+              <div id='RaNeRF_off'>
+                  <img src="images/RaNeRF_pipeline.png"  alt="PontTuset" width="160" style="border-style: none">
+
+              </div>
+              <script type="text/javascript">
+                function RaNeRF_still_mouse_on() {
+                  document.getElementById('RaNeRF_on').style.display = 'inline';
+                  document.getElementById('RaNeRF_off').style.display = 'none';
+                }
+                function RaNeRF_still() {
+                  document.getElementById('RaNeRF_on').style.display = 'none';
+                  document.getElementById('RaNeRF_off').style.display = 'inline';
+                }
+                RaNeRF_still()
+              </script>
+            </td>
+            <td width="75%" valign="middle">
+              <p>
+                  <papertitle>RaNeRF: Neural 3D Reconstruction of Space Targets from ISAR Image Sequences</papertitle>
+                </a>
+                <br>
+                Afei Liu, Shuanghui Zhang, Chi Zhang, <strong>Shuaifeng Zhi</strong>,  Xiang Li
+                <br>
+                <em>IEEE Transactions on Geoscience and Remote Sensing (T-GRS)</em>, 2023
+                <br>
+                <!-- <em>Paper and codes comming soon.</em> -->
+              </p>
+              <p>
+                RaNeRF is a novel 3D target reconstruction method using only observed ISAR image sequences, built upon powerful neural radiance fileds.
+              </p>
+            </td>
+          </tr>
+
+
+
+
           <tr>
             <td width="25%"><img src="images/TsCM_SCM.png" alt="PontTuset" width="190" style="border-style: none">
               <td width="75%" valign="top">
@@ -244,6 +283,25 @@
                   We propose Two-stage Causal Modeling (TsCM) for unbiased SGG predictions. Taking the long-tailed distribution and semantic confusion 
                   as confounders to the Structural Causal Model (SCM), we decouple the causal intervention into two stages. As a model agnostic method, TsCM
                   achieves a better tradeoff between head and tail relationships.
+                </p>
+              </td>
+          </tr>
+
+          <tr>
+            <td width="25%"><img src="images/ROFusion_network.jpg" alt="PontTuset" width="190" style="border-style: none">
+              <td width="75%" valign="top">
+                <p>
+                    <papertitle>ROFusion: Efficient Object Detection using Hybrid Point-wise Radar-Optical Fusion</papertitle>
+                  </a>
+                  <br>
+                  Liu Liu, <strong>Shuaifeng Zhi</strong>, Zhenhua Du, Li Liu, Xinyu Zhang, Kai Huo, Weidong Jiang
+                  <br>
+                  <em>International Conference on Artificial Neural Networks (ICANN)</em>, 2023
+                  <br>
+                  <a href="https://arxiv.org/abs/2307.08233" target="_blank">arxiv</a>
+                <p>
+                  We propose ROFusion, a hybrid point-wise Radar-Optical fusion approach for object detection in autonomous driving scenarios, motivated by 
+                  dense contextual information from both the range-doppler spectrum and images.
                 </p>
               </td>
           </tr>
