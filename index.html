@@ -185,8 +185,118 @@
 
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-        
+ 
+          <tr onmouseout="SSR2D_still()" onmouseover="SSR2D_still_mouse_on()">
+            <td width="25%">
+              <div id='SSR2D_on' class='hidden'><img src="images/SSR2D_pipeline.png"  alt="PontTuset" width="188" style="border-style: none"></div>
+              <div id='SSR2D_off'>
+                  <img src="images/SSR2D_teaser.png"  alt="PontTuset" width="180" style="border-style: none">
 
+              </div>
+              <script type="text/javascript">
+                function SSR2D_still_mouse_on() {
+                  document.getElementById('SSR2D_on').style.display = 'inline';
+                  document.getElementById('SSR2D_off').style.display = 'none';
+                }
+                function SSR2D_still() {
+                  document.getElementById('SSR2D_on').style.display = 'none';
+                  document.getElementById('SSR2D_off').style.display = 'inline';
+                }
+                SSR2D_still()
+              </script>
+            </td>
+              <td width="75%" valign="top">
+                <p>
+                    <papertitle>SSR-2D: Semantic 3D Scene Reconstruction from 2D Images</papertitle>
+                  </a>
+                  <br>
+                  Junwen Huang, Alexey Artemov, Yujin Chen, <strong>Shuaifeng Zhi</strong>, Kai Xu, Matthias Nie&szligner
+                  <!-- &szlig for ß -->
+                  <br>
+                  <em>IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI)</em>, 2024
+                  <br>
+                  <a href="https://arxiv.org/abs/2302.03640" target="_blank">arxiv</a>
+                <p>
+                  We leverage differential rendering to learn complete 3D scans with semantic labelling<em> without any 3D annotations</em>.
+                </p>
+              </td>
+          </tr>
+
+          
+          <tr>
+            <td width="25%"><img src="images/OS3FLOW_framework.png" alt="PontTuset" width="190" style="border-style: none">
+              <td width="75%" valign="top">
+                <p>
+                    <papertitle>OS<sup>3</sup>Flow: Optical and SAR Image Registration Using Symmetry-Guided Semi-Dense Optical Flow</papertitle>
+                  </a>
+                  <br>
+                  Zixuan Sun, <strong>Shuaifeng Zhi</strong>, Kai Huo, Xuecong Liu, Weidong Jiang, Yongxiang Liu
+                  <br>
+                  <em>IEEE Geoscience and Remote Sensing Letters (GRSL)</em>, 2024
+                  <br>
+                <p>
+                 We introduce OS<sup>3</sup>Flow, a novel registration framework using implicit symmetry between heterogeneous SAR image pairs to extract high-quality semi-dense flow estimations.
+                </p>
+              </td>
+          </tr>
+
+          <tr>
+            <td width="25%"><img src="images/IM_DCL_pipeline.png" alt="PontTuset" width="190" style="border-style: none">
+              <td width="75%" valign="top">
+                <p>
+                    <papertitle>Enhancing Information Maximization with Distance-Aware Contrastive Learning for Source-Free Cross-Domain Few-Shot Learning</papertitle>
+                  </a>
+                  <br>
+                  Huali Xu, Li Liu, <strong>Shuaifeng Zhi</strong>, Shaojing Fu, Zhuo Su, Ming-Ming Cheng, Yongxiang Liu
+                  <br>
+                  <em>IEEE Transactions on Image Processing  (T-IP)</em>, 2024
+                  <br>
+                  <a href="https://arxiv.org/html/2403.01966v1" target="_blank">arxiv</a> /
+                  <a href="https://ieeexplore.ieee.org/document/10471355" target="_blank">IEEE Link</a>
+                <p>
+                  We explore the Source-Free Cross-Domain Few-Shot Learning (SF-CDFSL) problem, leveraging on an enhanced information maximization (IM) strategy and a transductive mechanism.
+                </p>
+              </td>
+          </tr>
+
+          <tr onmouseout="MWS_still()" onmouseover="MWS_still_mouse_on()">
+            <td width="25%">
+              <div id='MWS_on' class='hidden'><img src="images/MWS_SEQ_pipeline.png"  alt="PontTuset" width="188" style="border-style: none"></div>
+              <div id='MWS_off'>
+                  <img src="images/MWS_SEQ_TEASER.png"  alt="PontTuset" width="150" style="border-style: none">
+
+              </div>
+              <script type="text/javascript">
+                function MWS_still_mouse_on() {
+                  document.getElementById('MWS_on').style.display = 'inline';
+                  document.getElementById('MWS_off').style.display = 'none';
+                }
+                function MWS_still() {
+                  document.getElementById('MWS_on').style.display = 'none';
+                  document.getElementById('MWS_off').style.display = 'inline';
+                }
+                MWS_still()
+              </script>
+            </td>
+            <td width="75%" valign="middle">
+              <p>
+                  <papertitle>Looking Beneath More: A Sequence-based Localizing Ground Penetrating Radar Framework</papertitle>
+                </a>
+                <br>
+                Pengyu Zhang, <strong>Shuaifeng Zhi</strong>, Yuelin Yuan, Beizhen Bi, Qin Xin, Xiaotao Huang, Liang Shen
+                <br>
+                <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2024
+                <br>
+              </p>
+              <p>
+              We propose a sequence-based framework for Localizing Ground Penetrating Radar (LGPR) to address the challenges caused by 
+              the extreme scarcity of underground features and their introduced false candidate matches.
+                <br>
+              </p>
+            </td>
+          </tr>
+
+          
           <tr onmouseout="PlaneRecTR_still()" onmouseover="PlaneRecTR_still_mouse_on()">
             <td width="25%">
               <div id='PlaneRecTR_on' class='hidden'><img src="images/PlaneRecTR_result.png"  alt="PontTuset" width="188" style="border-style: none"></div>
@@ -309,25 +419,6 @@
               </td>
           </tr>
 
-
-          <tr>
-            <td width="25%"><img src="images/S4R.png" alt="PontTuset" width="190" style="border-style: none">
-              <td width="75%" valign="top">
-                <p>
-                    <papertitle>S<sup>4</sup>R: Self-Supervised Semantic Scene Reconstruction from RGB-D Scans</papertitle>
-                  </a>
-                  <br>
-                  Junwen Huang, Alexey Artemov, Yujin Chen, <strong>Shuaifeng Zhi</strong>, Kai Xu, Matthias Nie&szligner
-                  <!-- &szlig for ß -->
-                  <br>
-                  <em>arxiv pre-print</em>, 2023
-                  <br>
-                  <a href="https://arxiv.org/abs/2302.03640" target="_blank">arxiv</a>
-                <p>
-                  We leverage differential rendering to learn complete 3D scans with semantic labelling<em> without any 3D annotations</em>.
-                </p>
-              </td>
-          </tr>
 
 
           <tr>
